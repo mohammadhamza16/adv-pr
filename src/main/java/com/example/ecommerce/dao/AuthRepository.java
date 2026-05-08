@@ -1,4 +1,4 @@
-package com.example.ecommerce.repository;
+package com.example.ecommerce.dao;
 
 import com.example.ecommerce.model.AuthToken;
 
@@ -52,3 +52,4 @@ public class AuthRepository {
         }
     }
 }
+

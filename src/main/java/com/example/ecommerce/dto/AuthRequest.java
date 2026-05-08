@@ -1,4 +1,4 @@
-package com.example.ecommerce.dto;
+package com.example.ecommerce.ايdto;
 
 public class AuthRequest {
     private String username;

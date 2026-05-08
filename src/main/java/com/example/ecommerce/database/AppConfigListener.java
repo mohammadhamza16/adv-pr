@@ -1,4 +1,4 @@
-package com.example.ecommerce.config;
+package com.example.ecommerce.database;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -73,3 +73,4 @@ public class AppConfigListener implements ServletContextListener {
         }
     }
 }
+

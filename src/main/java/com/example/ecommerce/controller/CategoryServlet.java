@@ -1,9 +1,9 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.dto.CategoryRequest;
 import com.example.ecommerce.model.Category;
-import com.example.ecommerce.repository.CategoryRepository;
+import com.example.ecommerce.dao.CategoryRepository;
 import com.example.ecommerce.service.CategoryService;
 import com.example.ecommerce.util.JsonUtil;
 import jakarta.servlet.ServletContext;
@@ -102,3 +102,4 @@ public class CategoryServlet extends HttpServlet {
         }
     }
 }
+

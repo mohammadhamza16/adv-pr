@@ -1,7 +1,7 @@
 package com.example.ecommerce.service;
 
 import com.example.ecommerce.model.Payment;
-import com.example.ecommerce.repository.PaymentRepository;
+import com.example.ecommerce.dao.PaymentRepository;
 import com.example.ecommerce.util.PaymentRateLimiter;
 
 import java.sql.SQLException;
@@ -39,3 +39,4 @@ public class PaymentService {
         return repository.findAll();
     }
 }
+

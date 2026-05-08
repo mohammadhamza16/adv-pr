@@ -1,6 +1,6 @@
 package com.example.ecommerce.service;
 
-import com.example.ecommerce.repository.ResetRepository;
+import com.example.ecommerce.dao.ResetRepository;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
@@ -30,3 +30,4 @@ public class ResetService {
         }
     }
 }
+

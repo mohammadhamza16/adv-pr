@@ -1,12 +1,12 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.dto.AuthRequest;
 import com.example.ecommerce.dto.AuthResponse;
 import com.example.ecommerce.dto.SimpleResponse;
 import com.example.ecommerce.model.User;
-import com.example.ecommerce.repository.AuthRepository;
-import com.example.ecommerce.repository.UserRepository;
+import com.example.ecommerce.dao.AuthRepository;
+import com.example.ecommerce.dao.UserRepository;
 import com.example.ecommerce.service.AuthService;
 import com.example.ecommerce.util.JsonUtil;
 import com.example.ecommerce.util.JwtUtil;
@@ -79,3 +79,4 @@ public class AuthServlet extends HttpServlet {
         }
     }
 }
+

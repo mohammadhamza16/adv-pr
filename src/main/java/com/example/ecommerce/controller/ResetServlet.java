@@ -1,6 +1,6 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.service.ResetService;
 import com.example.ecommerce.util.JsonUtil;
 import jakarta.servlet.ServletContext;
@@ -21,7 +21,7 @@ public class ResetServlet extends HttpServlet {
         DataSource dataSource = (DataSource) context.getAttribute(ContextAttributes.DATA_SOURCE);
         JedisPool jedisPool = (JedisPool) context.getAttribute(ContextAttributes.JEDIS_POOL);
         String productCacheKey = (String) context.getAttribute(ContextAttributes.PRODUCT_CACHE_KEY);
-        resetService = new ResetService(new com.example.ecommerce.repository.ResetRepository(dataSource), jedisPool, productCacheKey);
+        resetService = new ResetService(new com.example.ecommerce.dao.ResetRepository(dataSource), jedisPool, productCacheKey);
     }
 
     @Override
@@ -42,3 +42,4 @@ public class ResetServlet extends HttpServlet {
         }
     }
 }
+

@@ -148,8 +148,8 @@
 - `src/main/resources/application.properties` - إعدادات DB و Redis و JWT.
 - `src/main/resources/schema.sql` - إنشاء الجداول.
 - `src/main/webapp/WEB-INF/web.xml` - إعداد المجلدات والـ servlets.
-- `src/main/java/com/example/ecommerce/servlet` - طبقة واجهة HTTP.
+- `src/main/java/com/example/ecommerce/controller` - طبقة واجهة HTTP.
 - `src/main/java/com/example/ecommerce/service` - منطق التطبيق.
-- `src/main/java/com/example/ecommerce/repository` - الوصول إلى قاعدة البيانات.
+- `src/main/java/com/example/ecommerce/dao` - الوصول إلى قاعدة البيانات.
 - `src/main/java/com/example/ecommerce/model` - الكيانات والنماذج.
 - `src/main/java/com/example/ecommerce/util` - أدوات مثل JWT و JSON و Redis.

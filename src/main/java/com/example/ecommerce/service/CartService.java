@@ -1,7 +1,7 @@
 package com.example.ecommerce.service;
 
 import com.example.ecommerce.model.Cart;
-import com.example.ecommerce.repository.CartRepository;
+import com.example.ecommerce.dao.CartRepository;
 
 import java.sql.SQLException;
 
@@ -27,3 +27,4 @@ public class CartService {
         repository.clearCart(userId);
     }
 }
+

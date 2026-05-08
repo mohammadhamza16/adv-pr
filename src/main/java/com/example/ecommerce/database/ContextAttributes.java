@@ -1,4 +1,4 @@
-package com.example.ecommerce.config;
+package com.example.ecommerce.database;
 
 public class ContextAttributes {
     public static final String DATA_SOURCE = "app.datasource";
@@ -9,3 +9,4 @@ public class ContextAttributes {
     public static final String PRODUCT_CACHE_TTL = "app.productCacheTtl";
     public static final String PAYMENT_LOCK_TTL = "app.paymentLockTtl";
 }
+

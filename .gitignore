@@ -1,10 +1,10 @@
-# Build output
-/target/
+# # Build output
+# /target/
 
-# IntelliJ files
-/.idea/
-*.iml
+# # IntelliJ files
+# /.idea/
+# *.iml
 
-# OS files
-.DS_Store
-Thumbs.db
+# # OS files
+# .DS_Store
+# Thumbs.db

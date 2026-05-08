@@ -2,11 +2,11 @@
 
 ## Architecture Overview
 The application uses a clean architecture pattern:
-- `servlet` layer: HTTP controllers that parse requests and return JSON responses.
+- `controller` layer: HTTP servlets that parse requests and return JSON responses.
 - `service` layer: business logic and authorization handling.
-- `repository` layer: JDBC persistence for MySQL.
+- `dao` layer: JDBC persistence for MySQL.
 - `util` layer: JSON serialization, JWT generation, password hashing, response helpers.
-- `config` layer: shared application configuration stored in `ServletContext`.
+- `database` layer: shared application configuration stored in `ServletContext`.
 
 ## Shared Configuration
 `AppConfigListener` loads `application.properties` at application startup. It creates:
@@ -14,7 +14,7 @@ The application uses a clean architecture pattern:
 - `JedisPool` for Redis caching.
 - JWT secret and expiration values.
 
-These objects are stored in `ServletContext` and reused by servlets and repositories.
+These objects are stored in `ServletContext` and reused by controllers and DAOs.
 
 ## Authentication & Authorization
 - JWT tokens are issued by `JwtUtil` when users log in.

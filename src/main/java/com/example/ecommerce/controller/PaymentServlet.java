@@ -1,9 +1,9 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.dto.PaymentRequest;
 import com.example.ecommerce.model.Payment;
-import com.example.ecommerce.repository.PaymentRepository;
+import com.example.ecommerce.dao.PaymentRepository;
 import com.example.ecommerce.service.PaymentService;
 import com.example.ecommerce.util.JsonUtil;
 import com.example.ecommerce.util.PaymentRateLimiter;
@@ -80,3 +80,4 @@ public class PaymentServlet extends HttpServlet {
         return role;
     }
 }
+

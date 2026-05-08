@@ -120,7 +120,7 @@
   - `SimpleResponse`
 - كيفية استخدامه: تُستخدم كـ واجهة بين JSON في الطلبات والبيزنس لوجيك.
 
-### `src/main/java/com/example/ecommerce/repository/`
+### `src/main/java/com/example/ecommerce/dao/`
 
 - يحتوي على طبقة الوصول للبيانات (`Data Access Layer`).
 - لكل كيان يوجد Repository خاص به.
@@ -133,7 +133,7 @@
   - `PaymentRepository` للتعامل مع `payments`
   - `AuthRepository` لتخزين وإلغاء الـ JWT tokens
   - `ResetRepository` لمسح البيانات وإعادة ضبط النظام
-- كيفية استخدامه: كل Repository يستخدم `DataSource` ويخدم الـ Service المناسب.
+- كيفية استخدامه: كل DAO يستخدم `DataSource` ويخدم الـ Service المناسب.
 
 ### `src/main/java/com/example/ecommerce/service/`
 
@@ -155,7 +155,7 @@
   - يضع بيانات المستخدم في الطلب إذا كان التوكن صالحاً.
   - كيفية استخدامه: يعمل تلقائياً لأن `web.xml` يعرفه على جميع المسارات.
 
-### `src/main/java/com/example/ecommerce/servlet/`
+### `src/main/java/com/example/ecommerce/controller/`
 
 - يحتوي على طبقة التحكم (`Controllers`) التي تتعامل مع HTTP.
 - أمثلة:

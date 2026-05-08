@@ -9,7 +9,7 @@ This project is a clean-architecture REST API built with Java Servlet API, MySQL
 - JWT authentication with role-based authorization (`ADMIN`, `USER`)
 - Shared configuration using `ServletContext`
 - Endpoints for Auth, Products, Cart, Orders, Payments, Categories
-- Clean architecture with controllers, services, repositories, models, utils
+- Clean architecture with controllers, services, DAOs, models, utils
 
 ## Setup
 1. Install Java 17+ and Maven.

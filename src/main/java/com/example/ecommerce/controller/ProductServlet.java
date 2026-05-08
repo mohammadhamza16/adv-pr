@@ -1,9 +1,9 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.dto.ProductRequest;
 import com.example.ecommerce.model.Product;
-import com.example.ecommerce.repository.ProductRepository;
+import com.example.ecommerce.dao.ProductRepository;
 import com.example.ecommerce.service.ProductService;
 import com.example.ecommerce.util.JsonUtil;
 import jakarta.servlet.ServletContext;
@@ -127,3 +127,4 @@ public class ProductServlet extends HttpServlet {
         }
     }
 }
+

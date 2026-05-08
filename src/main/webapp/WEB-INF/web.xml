@@ -7,7 +7,7 @@
     <display-name>E-commerce Servlet REST API</display-name>
 
     <listener>
-        <listener-class>com.example.ecommerce.config.AppConfigListener</listener-class>
+        <listener-class>com.example.ecommerce.database.AppConfigListener</listener-class>
     </listener>
 
     <filter>
@@ -21,7 +21,7 @@
 
     <servlet>
         <servlet-name>AuthServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.AuthServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.AuthServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AuthServlet</servlet-name>
@@ -30,7 +30,7 @@
 
     <servlet>
         <servlet-name>ProductServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.ProductServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.ProductServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProductServlet</servlet-name>
@@ -39,7 +39,7 @@
 
     <servlet>
         <servlet-name>CartServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.CartServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.CartServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
@@ -48,7 +48,7 @@
 
     <servlet>
         <servlet-name>OrderServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.OrderServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.OrderServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>OrderServlet</servlet-name>
@@ -57,7 +57,7 @@
 
     <servlet>
         <servlet-name>PaymentServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.PaymentServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.PaymentServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>PaymentServlet</servlet-name>
@@ -66,7 +66,7 @@
 
     <servlet>
         <servlet-name>CategoryServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.CategoryServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.CategoryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CategoryServlet</servlet-name>
@@ -75,7 +75,7 @@
 
     <servlet>
         <servlet-name>ResetServlet</servlet-name>
-        <servlet-class>com.example.ecommerce.servlet.ResetServlet</servlet-class>
+        <servlet-class>com.example.ecommerce.controller.ResetServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ResetServlet</servlet-name>
@@ -83,3 +83,4 @@
     </servlet-mapping>
 
 </web-app>
+

@@ -1,4 +1,4 @@
-package com.example.ecommerce.repository;
+package com.example.ecommerce.dao;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -29,3 +29,4 @@ public class ResetRepository {
         }
     }
 }
+

@@ -1,7 +1,7 @@
 package com.example.ecommerce.service;
 
 import com.example.ecommerce.model.Product;
-import com.example.ecommerce.repository.ProductRepository;
+import com.example.ecommerce.dao.ProductRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -70,3 +70,4 @@ public class ProductService {
         }
     }
 }
+

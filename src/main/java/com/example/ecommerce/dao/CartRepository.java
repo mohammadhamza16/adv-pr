@@ -1,4 +1,4 @@
-package com.example.ecommerce.repository;
+package com.example.ecommerce.dao;
 
 import com.example.ecommerce.model.Cart;
 import com.example.ecommerce.model.CartItem;
@@ -107,3 +107,4 @@ public class CartRepository {
         }
     }
 }
+

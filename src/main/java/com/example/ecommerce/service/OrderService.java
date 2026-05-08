@@ -5,8 +5,8 @@ import com.example.ecommerce.model.CartItem;
 import com.example.ecommerce.model.Order;
 import com.example.ecommerce.model.OrderItem;
 import com.example.ecommerce.model.Product;
-import com.example.ecommerce.repository.OrderRepository;
-import com.example.ecommerce.repository.ProductRepository;
+import com.example.ecommerce.dao.OrderRepository;
+import com.example.ecommerce.dao.ProductRepository;
 
 import java.math.BigDecimal;
 import java.sql.SQLException;
@@ -62,3 +62,4 @@ public class OrderService {
         return orderRepository.findAll();
     }
 }
+

@@ -1,7 +1,7 @@
 package com.example.ecommerce.service;
 
 import com.example.ecommerce.model.Category;
-import com.example.ecommerce.repository.CategoryRepository;
+import com.example.ecommerce.dao.CategoryRepository;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -29,3 +29,4 @@ public class CategoryService {
         return repository.delete(id);
     }
 }
+

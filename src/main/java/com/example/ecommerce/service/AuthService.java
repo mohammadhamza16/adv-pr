@@ -3,8 +3,8 @@ package com.example.ecommerce.service;
 import com.example.ecommerce.dto.AuthResponse;
 import com.example.ecommerce.model.AuthToken;
 import com.example.ecommerce.model.User;
-import com.example.ecommerce.repository.AuthRepository;
-import com.example.ecommerce.repository.UserRepository;
+import com.example.ecommerce.dao.AuthRepository;
+import com.example.ecommerce.dao.UserRepository;
 import com.example.ecommerce.util.JwtUtil;
 import com.example.ecommerce.util.PasswordUtil;
 
@@ -64,3 +64,4 @@ public class AuthService {
         return !authRepository.isTokenRevoked(token) && jwtUtil.isValid(token);
     }
 }
+

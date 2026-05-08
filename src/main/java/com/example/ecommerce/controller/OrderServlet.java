@@ -1,10 +1,10 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.dto.OrderRequest;
 import com.example.ecommerce.model.Order;
-import com.example.ecommerce.repository.OrderRepository;
-import com.example.ecommerce.repository.ProductRepository;
+import com.example.ecommerce.dao.OrderRepository;
+import com.example.ecommerce.dao.ProductRepository;
 import com.example.ecommerce.service.CartService;
 import com.example.ecommerce.service.OrderService;
 import com.example.ecommerce.util.JsonUtil;
@@ -24,7 +24,7 @@ public class OrderServlet extends HttpServlet {
     public void init() {
         ServletContext context = getServletContext();
         DataSource dataSource = (DataSource) context.getAttribute(ContextAttributes.DATA_SOURCE);
-        orderService = new OrderService(new OrderRepository(dataSource), new CartService(new com.example.ecommerce.repository.CartRepository(dataSource)), new ProductRepository(dataSource));
+        orderService = new OrderService(new OrderRepository(dataSource), new CartService(new com.example.ecommerce.dao.CartRepository(dataSource)), new ProductRepository(dataSource));
     }
 
     @Override
@@ -74,3 +74,4 @@ public class OrderServlet extends HttpServlet {
         return role;
     }
 }
+

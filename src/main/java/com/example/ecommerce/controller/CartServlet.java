@@ -1,9 +1,9 @@
-package com.example.ecommerce.servlet;
+package com.example.ecommerce.controller;
 
-import com.example.ecommerce.config.ContextAttributes;
+import com.example.ecommerce.database.ContextAttributes;
 import com.example.ecommerce.dto.CartRequest;
 import com.example.ecommerce.model.Cart;
-import com.example.ecommerce.repository.CartRepository;
+import com.example.ecommerce.dao.CartRepository;
 import com.example.ecommerce.service.CartService;
 import com.example.ecommerce.util.JsonUtil;
 import jakarta.servlet.ServletContext;
@@ -59,3 +59,4 @@ public class CartServlet extends HttpServlet {
         return (Long) attribute;
     }
 }
+

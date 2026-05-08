@@ -1,7 +1,7 @@
 package com.example.ecommerce.filter;
 
-import com.example.ecommerce.config.ContextAttributes;
-import com.example.ecommerce.repository.AuthRepository;
+import com.example.ecommerce.database.ContextAttributes;
+import com.example.ecommerce.dao.AuthRepository;
 import com.example.ecommerce.util.JwtUtil;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
@@ -73,3 +73,4 @@ public class AuthFilter implements Filter {
         return false;
     }
 }
+
